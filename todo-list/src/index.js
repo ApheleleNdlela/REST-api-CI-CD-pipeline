@@ -3,7 +3,7 @@ const app = express();
 
 app.use(express.json());
 
-let tasks = [];
+let tasks = ['This is a test case for the CI/CD'];
 
 app.get('/tasks', (req, res) => res.json(tasks));
 app.post('/tasks', (req, res) => {
